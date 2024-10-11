@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Popins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+}
+
+.card {
+  width: 100%;
+  max-width: 470px;
+  background: linear-gradient(40deg, #155263 9%, #155263 43%, #FF6F3C calc(43% + 1px), #FF6F3C 52%, #FF9A3C calc(52% + 1px), #FF9A3C 80%, #FFC93C calc(80% + 1px), #FFC93C 100%);
+  color: #fff;
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 26px;
+  text-align: center;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search input {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #555;
+  padding: 10px 25px;
+  height: 60px;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 20px;
+  font-size: 18px;
+  margin-left: -10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.search button {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  padding-left: -5px;
+
+}
+
+.search button img {
+  max-width: 70%;
+  max-height: 100%;
+  opacity: 50%;
+}
+
+/* media querry */
+
+@media screen and (max-width:600px) {
+  .search input {
+    margin-left: -15px;
+  }
+
+  .search button {
+    margin-right: -10px;
+    padding-right: 0px;
+    margin-left: -5px;
+  }
+
+}
+
+
+
+.weather-icon {
+  width: 170px;
+  margin-top: 30px;
+}
+
+.weather h1 {
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.weather h2 {
+  font-size: 45px;
+  font-weight: 500;
+  margin-top: -10px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.col1,
+.col2 {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: space space-around;
+}
+
+.col1 {
+  margin-right: 50px;
+}
+
+.col1 img {
+  width: 60px;
+  height: auto;
+  margin-right: 10px;
+  padding-bottom: 5px;
+}
+
+.col2 img {
+  width: 40px;
+  margin-right: 9px;
+  width: 39%;
+  height: auto;
+}
+
+
+
+.humidity,
+.wind {
+  font-size: 15px;
+  margin-top: -6px;
+}
+
+.weather {
+  display: none;
+}
+
+.error {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: none;
+  display: none;
+  color: white;
+}
